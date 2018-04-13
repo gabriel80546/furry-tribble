@@ -18,6 +18,7 @@ if [ $? -eq 0 -a ! -s err ]
 then
 	echo -e "\033[1;32mCompilaçao deu certo\033[0m"
 else
+	cat err
 	echo -e "\033[1;31mCompilação deu merda\033[0m"
 fi
 echo -e "\033[7mgcc -O1 -g -o engineO1 ../engine.c\033[0m"
@@ -26,6 +27,7 @@ if [ $? -eq 0 -a ! -s err ]
 then
 	echo -e "\033[1;32mCompilaçao deu certo\033[0m"
 else
+	cat err
 	echo -e "\033[1;31mCompilação deu merda\033[0m"
 fi
 echo -e "\033[7mgcc -O2 -g -o engineO2 ../engine.c\033[0m"
@@ -34,6 +36,7 @@ if [ $? -eq 0 -a ! -s err ]
 then
 	echo -e "\033[1;32mCompilaçao deu certo\033[0m"
 else
+	cat err
 	echo -e "\033[1;31mCompilação deu merda\033[0m"
 fi
 echo -e "\033[7mgcc -O3 -g -o engineO3 ../engine.c\033[0m"
@@ -42,6 +45,7 @@ if [ $? -eq 0 -a ! -s err ]
 then
 	echo -e "\033[1;32mCompilaçao deu certo\033[0m"
 else
+	cat err
 	echo -e "\033[1;31mCompilação deu merda\033[0m"
 fi
 echo -e "\033[7mgcc -O0 -g -o engineO0 ../engine.c\033[0m"
@@ -50,6 +54,7 @@ if [ $? -eq 0 -a ! -s err ]
 then
 	echo -e "\033[1;32mCompilaçao deu certo\033[0m"
 else
+	cat err
 	echo -e "\033[1;31mCompilação deu merda\033[0m"
 fi
 echo -e "\033[7mgcc -Os -g -o engineOs ../engine.c\033[0m"
@@ -58,6 +63,7 @@ if [ $? -eq 0 -a ! -s err ]
 then
 	echo -e "\033[1;32mCompilaçao deu certo\033[0m"
 else
+	cat err
 	echo -e "\033[1;31mCompilação deu merda\033[0m"
 fi
 echo -e "\033[7mgcc -Ofast -g -o engineOfast ../engine.c\033[0m"
@@ -66,6 +72,7 @@ if [ $? -eq 0 -a ! -s err ]
 then
 	echo -e "\033[1;32mCompilaçao deu certo\033[0m"
 else
+	cat err
 	echo -e "\033[1;31mCompilação deu merda\033[0m"
 fi
 

@@ -141,7 +141,7 @@ void newPosicao(Posicao* posicao)
 	posicao->fenToPosicao = &PosicaoFenToPosicao;
 	posicao->zerarPosicao = &PosicaoZerarPosicao;
 	posicao->zerarPosicao(posicao);
-	for(i=0;i<80;i++)
+	for(i=0;i<64;i++)
 	{posicao->board64[i]='.';}
 
 	return;

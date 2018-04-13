@@ -1,9 +1,0 @@
-In file included from ./temp/objetos.c:3:0,
-                 from ./temp/engine.c:3:
-./temp/engine.c: In function ‘newPosicao’:
-./temp/Posicao.c:145:22: warning: iteration 64u invokes undefined behavior [-Waggressive-loop-optimizations]
-  {posicao->board64[i]='.';}
-                      ^
-./temp/Posicao.c:144:2: note: containing loop
-  for(i=0;i<80;i++)
-  ^
