@@ -110,64 +110,6 @@ depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named engine
-
-# Build rule for target.
-engine: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 engine
-.PHONY : engine
-
-# fast build rule for target.
-engine/fast:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/build
-.PHONY : engine/fast
-
-# target to build an object file
-Fen.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Fen.o
-.PHONY : Fen.o
-
-# target to preprocess a source file
-Fen.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Fen.i
-.PHONY : Fen.i
-
-# target to generate assembly for a file
-Fen.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/Fen.s
-.PHONY : Fen.s
-
-# target to build an object file
-String.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/String.o
-.PHONY : String.o
-
-# target to preprocess a source file
-String.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/String.i
-.PHONY : String.i
-
-# target to generate assembly for a file
-String.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/String.s
-.PHONY : String.s
-
-# target to build an object file
-engine.o:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/engine.o
-.PHONY : engine.o
-
-# target to preprocess a source file
-engine.i:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/engine.i
-.PHONY : engine.i
-
-# target to generate assembly for a file
-engine.s:
-	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/engine.s
-.PHONY : engine.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -175,17 +117,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... engine"
 	@echo "... rebuild_cache"
-	@echo "... Fen.o"
-	@echo "... Fen.i"
-	@echo "... Fen.s"
-	@echo "... String.o"
-	@echo "... String.i"
-	@echo "... String.s"
-	@echo "... engine.o"
-	@echo "... engine.i"
-	@echo "... engine.s"
 .PHONY : help
 
 

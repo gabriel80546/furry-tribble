@@ -3,15 +3,5 @@
   "directory": "/home/gabriel/desktop/Desenvolvimento/C/chess/bruteForce/build",
   "command": "/usr/bin/cc      -o CMakeFiles/engine.dir/engine.o   -c /home/gabriel/desktop/Desenvolvimento/C/chess/bruteForce/engine.c",
   "file": "/home/gabriel/desktop/Desenvolvimento/C/chess/bruteForce/engine.c"
-},
-{
-  "directory": "/home/gabriel/desktop/Desenvolvimento/C/chess/bruteForce/build",
-  "command": "/usr/bin/cc      -o CMakeFiles/engine.dir/String.o   -c /home/gabriel/desktop/Desenvolvimento/C/chess/bruteForce/String.c",
-  "file": "/home/gabriel/desktop/Desenvolvimento/C/chess/bruteForce/String.c"
-},
-{
-  "directory": "/home/gabriel/desktop/Desenvolvimento/C/chess/bruteForce/build",
-  "command": "/usr/bin/cc      -o CMakeFiles/engine.dir/Fen.o   -c /home/gabriel/desktop/Desenvolvimento/C/chess/bruteForce/Fen.c",
-  "file": "/home/gabriel/desktop/Desenvolvimento/C/chess/bruteForce/Fen.c"
 }
 ]

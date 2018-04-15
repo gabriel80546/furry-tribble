@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/engine.o"
-  "CMakeFiles/engine.dir/String.o"
-  "CMakeFiles/engine.dir/Fen.o"
   "engine.pdb"
   "engine"
 )

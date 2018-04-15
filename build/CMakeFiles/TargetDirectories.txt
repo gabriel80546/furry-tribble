@@ -1,3 +1,2 @@
 /home/gabriel/desktop/Desenvolvimento/C/chess/bruteForce/build/CMakeFiles/edit_cache.dir
-/home/gabriel/desktop/Desenvolvimento/C/chess/bruteForce/build/CMakeFiles/engine.dir
 /home/gabriel/desktop/Desenvolvimento/C/chess/bruteForce/build/CMakeFiles/rebuild_cache.dir
