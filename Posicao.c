@@ -1,4 +1,5 @@
 /*YCM*/#include "Fen.c"
+/*YCM*/#include "Cores.c"
 typedef struct Roque
 {
 	int pequenoBranco;
@@ -32,11 +33,8 @@ void PosicaoFenToPosicao(Posicao* posicao, Fen fen)
 
 	while(cursor != ' ')
 	{
-		//printf("%i = %c\n",i,cursor);
 		if(cursor == '/')
-		{
-			i++;
-		}
+		{i++;}
 		else if(cursor >= '1' && cursor <='8')
 		{
 			casa += cursor-'0';
@@ -51,20 +49,8 @@ void PosicaoFenToPosicao(Posicao* posicao, Fen fen)
 		cursor = *(array + i);
 	}
 	i++;
+	cursor = *(array + i);
 	posicao->ladoMover = *(array + i);
-	cursor = *(array + i);
-	printf("%i = %c\n",i,cursor);
-	i++;
-	cursor = *(array + i);
-	printf("%i = %c\n",i,cursor);
-	i++;
-	cursor = *(array + i);
-	printf("%i = %c\n",i,cursor);
-	i++;
-	cursor = *(array + i);
-	printf("%i = %c\n",i,cursor);
-	i++;
-	cursor = *(array + i);
 	printf("%i = %c\n",i,cursor);
 	i++;
 	cursor = *(array + i);
@@ -78,7 +64,9 @@ void PosicaoFenToPosicao(Posicao* posicao, Fen fen)
 }
 void  PosicaoShow120(Posicao posicao)
 {
-	printf("\033[1;33mPosicao120:\033[0m\n");
+	Cor cor;
+	newCor(&cor);
+	printf("%sPosicao120:%s\n",cor.amarelo.array,cor.normal.array);
 	int i=0;
 	int j,k;
 	for(k=0;k<12;k++)
@@ -94,7 +82,9 @@ void  PosicaoShow120(Posicao posicao)
 
 void  PosicaoShow64(Posicao posicao)
 {
-	printf("\033[1;33mPosicao64:\033[0m\n");
+	Cor cor;
+	newCor(&cor);
+	printf("%sPosicao64:%s\n",cor.amarelo.array,cor.normal.array);
 	int i=0;
 	int j,k;
 	for(k=0;k<8;k++)
@@ -135,7 +125,7 @@ void newPosicao(Posicao* posicao)
 {
 	int i;
 
-	newFen2(&(*posicao).fen);
+	newFen2(&posicao->fen);
 	posicao->show120 = &PosicaoShow120;
 	posicao->show64 = &PosicaoShow64;
 	posicao->fenToPosicao = &PosicaoFenToPosicao;

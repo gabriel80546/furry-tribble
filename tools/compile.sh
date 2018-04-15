@@ -1,18 +1,18 @@
 echo -e "\033[1;32m./compile.sh\033[0m"
-
+#
 echo -e "\033[7mrm ../.*.swp\033[0m"
 rm ../.*.swp
 echo -e "\033[7mmkdir temp\033[0m"
 mkdir temp
+echo -e "\033[7mmkdir temp/temp2\033[0m"
+mkdir temp/temp2/
 echo -e "\033[7mcp ../*.c temp/\033[0m"
 cp ../*.c temp/
-echo -e '\033[7mcat ../Fen.c | sed "s|/\*YCM\*/|//|" > temp/Fen.c\033[0m'
-# TODO GENERALIZAR
-cat ../Fen.c | sed "s|/\*YCM\*/|//|" > temp/Fen.c
-echo -e '\033[7mcat ../Fen.c | sed "s|/\*YCM\*/|//|" > temp/Fen.c\033[0m'
-cat ../Posicao.c | sed "s|/\*YCM\*/|//|" > temp/Posicao.c
+
+echo -e "\033[7mls ../*.c | xargs -I {} ./Compile2.sh {}\033[0m"
+ls ../*.c | xargs -I {} ./Compile2.sh {}
+
 echo -e "\033[7mgcc -Og -g -o ../engine ../engine.c\033[0m"
-echo -e "\$? = $?"
 gcc -Og -g -o  ../engine ./temp/engine.c 2>err
 if [ $? -eq 0 -a ! -s err ]
 then
@@ -78,3 +78,4 @@ fi
 
 echo -e "\033[7mrm -r temp\033[0m"
 rm -r temp
+rm err
