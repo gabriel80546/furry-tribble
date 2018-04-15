@@ -1,4 +1,5 @@
 #include "String.c"
 #include "Cores.c"
+#include "Erros.c"
 #include "Fen.c"
 #include "Posicao.c"
